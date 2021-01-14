@@ -1,0 +1,27 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "mongo transmitter",
+  "main": "back.js",
+  "dependencies": {
+    "@koa/cors": "^3.1.0",
+    "koa": "^2.13.1",
+    "koa-body": "^4.2.0",
+    "koa-route": "^3.2.0",
+    "mongodb": "^3.6.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/indbs/vue.git"
+  },
+  "author": "bs",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/indbs/vue/issues"
+  },
+  "homepage": "https://github.com/indbs/vue#readme"
+}
