@@ -1,0 +1,39 @@
+<html>
+    <head>
+	    <link rel="stylesheet" href="index.css">
+		<title>Donation app</title>
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    </head>
+	<body>
+		<div id="app" class="app">
+			<!--<p class="info">Pushed {{ this.store.state.pushed }}.</p>-->
+			<lightable-button
+				v-for="item in presets"
+				:clickedvalue="item"
+				:key="item"
+				:ref="buildButtonRefString(item)"></lightable-button>	
+			<!--<span class="info">Selected: {{ this.store.state.selected }}</span>-->
+
+			<select
+				v-model="selected"
+				class="selector"
+				@change="makeConversion(selected)">
+				<option
+					v-for="item in currencies"
+					:value="item.code">{{ item.code }}</option>
+			</select>
+
+			<!--<p class="info">inputted value is: {{ inputValue }}</p>-->
+			<input  
+				class="textInput"
+				type="number"
+				v-model="this.store.state.inputed"
+				placeholder="input here a donation value..."
+				@input="testInputValue(this.store.state.inputed)"
+				@keypress="checkInputedNumbers($event)">
+			<button @click="makeRequest()" class="buttonGo">DONATE</button>
+		</div>
+
+		<script src="index.js"></script>
+	</body>
+</html>

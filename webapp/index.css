@@ -1,0 +1,65 @@
+html, body {
+    margin: 25px;
+    padding: 0;
+}
+
+.selector
+{
+	margin: 10px;
+	width:  340px;
+}
+.app
+{
+	width:  400px;
+}
+.info{
+	margin: 0px;
+	color: gray;
+}
+.textInput{
+	margin: 10px;
+	width: 340px;
+}
+.regularButton{
+    background-color: #008CBA;
+    border: none;
+    color: white;
+	margin: 10px;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+	width: 100px;
+	height: 50px;
+	outline: 0;
+}
+.selectedButton{
+    background-color: #FF8C00;
+    border: none;
+    color: white;
+	margin: 10px;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+	width: 100px;
+	height: 50px;
+	outline: 0;
+}
+
+.buttonGo{
+    background-color: #008CBA;
+    border: none;
+    color: white;
+	margin: 10px;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+	width: 340px;
+	height: 50px;
+	outline: 0;
+}
